@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 100vh;
+  }
+  
+  .card {
+    padding: 3em;
+    background-color: yellow;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translateX(100px); 
+  }
+  
+  .card.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
